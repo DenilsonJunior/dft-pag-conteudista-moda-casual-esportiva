@@ -63,6 +63,7 @@
                     font-weight: 300;
                     line-height: 1.2;
                     font-family: "Poppins", sans-serif;
+                    width: min-content;
 
                     @media (max-width: 768px) {
                         margin-top: 1vw;
@@ -92,6 +93,12 @@
             }
             &:nth-of-type(6) {
                 border-radius: 0 50% 50% 0;
+                h3 {
+                    width: 100%;
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
+                }
             }
         }
     }
