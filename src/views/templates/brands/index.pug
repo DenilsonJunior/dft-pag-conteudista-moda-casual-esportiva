@@ -1,0 +1,12 @@
+mixin brands(titleBlock, cards)
+    .brandsTemplate
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                .line
+                h2= titleBlock.title
+        .boxFlex
+            each card in cards
+                .box
+                    a.card(href=card.link, rel="noopener noreferrer")
+                        img(src=card.img, alt=card.altTitle)
+                    h3= card.altTitle

@@ -1,0 +1,26 @@
+mixin recommendations(titleBlock, cards)
+    //- link style
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css")
+
+    .recommendationsTemplate
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                .line
+                h2= titleBlock.title
+        .boxFlex
+            .wrapper-carousel(
+                data-carousel=""
+                data-loop=""
+                data-view="3.5"
+                data-spacing="15"
+                data-autoplay="2000"
+            )
+                .keen-slider#recommendations(data-content-items)
+                    each card in cards
+                        .keen-slider__slide.number-slide
+                            a.card(href=card.link, rel="noopener noreferrer")
+                                .boxImg
+                                    img(src=card.img, alt=card.alt)
+
+    //- script
+    script(src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js")

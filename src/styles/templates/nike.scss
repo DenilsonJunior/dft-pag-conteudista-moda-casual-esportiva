@@ -1,0 +1,87 @@
+.nikeTemplate {
+    width: 100%;
+    padding: 0;
+    
+    .boxFlex {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+        padding-top: 2vw;
+        &::after {
+            pointer-events: none;
+            content: '';
+            box-shadow: inset 30vw 0vw 20vw -10vw rgba(255, 255, 255, .5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        &::before {
+            pointer-events: none;
+            content: '';
+            box-shadow: inset -30vw 0vw 20vw -10vw rgba(255, 255, 255, .5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .wrapper-carousel {
+            width: 100%;
+            .keen-slider {
+                .keen-slider__slide {
+                    .card {
+                        text-decoration: none;
+                        .boxImg {
+                            overflow: hidden;
+                            aspect-ratio: 5/3;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            img {
+                                width: 80%;
+                                transition: all 0.4s ease;
+                                display: block;
+                                position: relative;
+                                z-index: 1;
+                                margin: 5vw 0 2vw;
+                                @media (max-width: 768px) {
+                                    width: 40vw;
+                                }
+                            }
+                            h2 {
+                                font-family: "Playfair Display", serif;
+                                font-optical-sizing: auto;
+                                font-weight: 900;
+                                font-style: normal;
+                                text-transform: uppercase;
+                                line-height: 1;
+                                text-align: center;
+                                position: absolute;
+                                top: 0;
+                                color: black;
+                                font-size: 3vw;
+                                width: min-content;
+                            }
+                        }
+                        &:hover {
+                            .boxImg {
+                                padding: 2vw;
+                                img {
+                                    transform: rotate(-25deg) scale(1.3);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

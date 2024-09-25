@@ -1,0 +1,13 @@
+mixin questions(titleBlock, buttons)
+    .questionsTemplate
+        if titleBlock.type === 'titlepag'
+            .questionsTitle
+                .line
+                h3(data-title=titleBlock.title)= titleBlock.title
+        .accordeon
+            each button, index in buttons
+                .button 
+                    input.btnCheck(name="accordeon" id=`accDuvidas-${index}`)
+                    label(for=`accDuvidas-${index}`) #{button.titlebtn}
+                    .boxText
+                        != button.text

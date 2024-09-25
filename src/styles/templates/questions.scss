@@ -1,0 +1,243 @@
+.questionsTemplate {
+    padding: 0 0 5vw;
+
+    .questionsTitle {
+        margin: 0 auto 3rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        .line {
+            width: 100%;
+            height: 0.15rem;
+            background-color: black;
+            margin: 0 auto 1rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            &::after,
+            &::before {
+                content: '';
+                width: 0.7rem;
+                height: 0.7rem;
+                background-color: black;
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            &::after {
+                left: 0;
+            }
+
+            &::before {
+                right: 0;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            // margin: 0 auto;
+            font-size: 4.5vw;
+            position: relative;
+            z-index: 1;
+            line-height: 1;
+
+            @media (max-width: 768px) {
+                font-size: 7vw;
+            }
+
+            &::after {
+                content: attr(data-title);
+                position: absolute;
+                top: .4vw;
+                left: .4vw;
+                color: white;
+                width: 100%;
+                // white-space: nowrap;
+                z-index: -1;
+                text-shadow:
+                    1px 1px 0 #000,
+                    -1px -1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    0 0 5px #fff;
+            }
+        }
+    }
+
+    .accordeon {
+        width: 80%;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            width: calc(100% - 2rem);
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: .8rem;
+
+            @media (max-width: 768px) {
+                margin-top: 3vw;
+            }
+
+            .btnCheck {
+                display: none;
+
+                &.check + label + .boxText {
+                    opacity: 1;
+                    max-height: 1000vw; /* Ajuste conforme necessário */
+                    padding: 1vw;
+                    transform: rotateX(0deg);
+                }
+
+                &.check + label + .boxText h4,
+                &.check + label + .boxText p {
+                    opacity: 1;
+                }
+            }
+
+            label {
+                background-color: #E9E9E9;
+                cursor: pointer;
+                padding: 1.3vw 5vw 1.3vw 2.3vw;
+                display: flex;
+                // justify-content: center;
+                font-family: "Poppins", sans-serif;
+                border-radius: 1vw;
+                position: relative;
+                transition: background-color 0.3s ease; /* Suaviza a cor de fundo */
+
+                @media (max-width: 768px) {
+                    border-radius: 2vw;
+                    padding: 2vw 11vw 2vw 7vw;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &::after {
+                    content: '✚';
+                    position: absolute;
+                    right: 2vw;
+                    font-size: 2.2vw;
+                    width: 2vw;
+                    height: 2vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: transform 0.3s ease, color 0.3s ease;
+
+                    @media (max-width: 768px) {
+                        font-size: 4vw;
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    &::after {
+                        color: white;
+                    }
+                }
+            }
+
+            .boxText {
+                max-height: 0;
+                overflow: hidden;
+                padding: 0 1vw;
+                opacity: 0;
+                transition: opacity 0.3s ease, max-height 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                ol, ul {
+                    padding-left: 1.5vw;
+
+                    li {
+                        list-style: disc !important;
+                    }
+                    li + li {
+                        margin-top: .5vw;
+                    }
+                }
+
+                h4, p {
+                    font-size: 1.6vw;
+                    // transform: rotateX(90deg);
+                    // opacity: 0;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                    font-family: "Baskervville", serif;
+
+                    @media (max-width: 768px) {
+                        font-size: 4vw;
+                        line-height: 5.5vw;
+                    }
+
+                    a {
+                        color: black;
+                    }
+                }
+
+                .boxScroll {
+                    overflow: auto;
+                }
+
+                table {
+                    // margin: 1rem 0;
+                    // border: 1px solid #2D2D2B;
+                    font-family: "Baskervville", serif;
+                    border-collapse: collapse;
+                    thead {
+                        tr {
+                            th {
+                                border: 2px solid #2D2D2B;
+                                background-color: #2D2D2B;
+                                padding: 0 2vw;
+                                font-size: 1.6vw;
+                                color: white;
+                                @media (max-width: 768px) {
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                border: 2px solid #2D2D2B;
+                                padding: .5vw;
+                                font-size: 1.6vw;
+                                // transform: rotateX(90deg);
+                                // opacity: 0;
+                                transition: transform 0.3s ease, opacity 0.3s ease;
+            
+                                @media (max-width: 768px) {
+                                    font-size: 4vw;
+                                    line-height: 5.5vw;
+                                }
+                                a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .button .btnCheck.check + label::after {
+            transform: rotate(225deg);
+        }
+    }
+}

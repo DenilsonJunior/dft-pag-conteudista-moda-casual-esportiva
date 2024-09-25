@@ -1,0 +1,1093 @@
+include components/imports
+include templates/imports
+
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Estrutura Dafiti
+        link(rel="stylesheet" href="styles/main.css")
+        link(rel="stylesheet", href="external/style.css")
+    body
+        .dafitiStructure
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+            +bannerFull(
+                {
+                    "type": "image",
+                    "imgDesk": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_09_53_45_CAPA-MODA-CASUAL.jpg",
+                    "imgMob": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_10_48_47_CAPA-MODA-CASUAL-v3.jpg",
+                    "alt": "Mulheres vestindo bermuda, camisa listrada, regata bicolor, scarpin bico fino com estilo casual esportivo."
+                },
+                {
+                    "type": "title",
+                    "title": "<i>Moda</i><b> Casual Esportiva</b>"
+                },
+                {
+                    "type": "text",
+                    "text": "Descubra a moda casual esportiva na Dafiti, com peças que misturam tendências urbanas e a funcionalidade do esporte, esse estilo é ideal para um visual moderno e prático no dia a dia."
+                }
+            )
+
+            +tendencies(
+                [
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=camisa&wtqs=1",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_09_54_44_01._Camisa.jpg",
+                        "alt": "Mulher vestindo camisa azul e branca listrada, bermuda jeans ampla destroyed, scarpin mule com bico fino e bolsa preta.",
+                        "title": "Camisa",
+                        "text": ""
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=cal%C3%A7a+firebird+adidas&wtqs=1",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_09_54_45_02._Calça-Firebird.jpg",
+                        "alt": "Mulher vestindo camisa listrada, sapato com bico fino e calça firebird adidas originals com listras laterais, botões e fenda.",
+                        "title": "Calça firebird",
+                        "text": ""
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=alfaiataria&wtqs=1",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_09_54_47_03._Alfaiataria.jpg",
+                        "alt": "Mulher vestindo conjunto azul de blazer e calça alfaitaria, blusa branca e tênis esportivo cinza.",
+                        "title": "Alfaiataria",
+                        "text": ""
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=polo&wtqs=1",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_09_54_49_04._Polo.jpg",
+                        "alt": "Mulher vestindo camisa polo bicolor com listras da adidas, saia plissada, tênis adidas samba e meia cano alto.",
+                        "title": "Camisa polo",
+                        "text": ""
+                    }
+                ]
+            )
+
+            +categories(
+                'categories',
+                {
+                    "type": 'titlepag',
+                    "title": 'Principais peças'
+                },
+                [
+                    {
+                        "link": "#camiseta",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_17_01._Camiseta.jpg",
+                        "alt": "Homem vestindo camiseta listrada da marca adidas, com manga curta e gola redonda, além de listras nas cores rosa e azul.",
+                        "title": "Camiseta"
+                    },
+                    {
+                        "link": "#jaqueta",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_19_02._Jaqueta.jpg",
+                        "alt": "Jaqueta bomber adidas originals vermelha com logo trefoil, mangas raglan com listras laterais e bolsos frontais.",
+                        "title": "Jaqueta"
+                    },
+                    {
+                        "link": "#calca",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_20_03._Calça.jpg",
+                        "alt": "Mulher vestindo calça firebird adidas preta com recorte lateral branco, fenda, botões, listras bordadas e logo da marca.",
+                        "title": "Calça"
+                    },
+                    {
+                        "link": "#regata",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_22_04._Regata.jpg",
+                        "alt": "Mulher vestindo regata bicolor, estrutura branca e recortes em preto, com barra mais ajustada e comprimento levemente curto.",
+                        "title": "Regata"
+                    },
+                    {
+                        "link": "#tenis",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_23_05._Tênis.jpg",
+                        "alt": "Tênis New Balance 530 roxo e azul, com logo lateral prateado e solado em bege e com relevos e texturas.",
+                        "title": "Tênis"
+                    },
+                    {
+                        "link": "#sapatilha",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_23_08_51_39_06._Sapatilha.jpg",
+                        "alt": "Sapatilha prateada, com textura e acabamento metalizado, tira superior com fivela ajustável e salto baixo.",
+                        "title": "Sapatilha"
+                    },
+                    {
+                        "link": "#scarpin",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_23_08_51_38_07._Scarpin.jpg",
+                        "alt": "Scarpin slinkback vermelho com bico fino, laço frontal, ajuste lateral por fivela e salto baixo e fino com base redonda.",
+                        "title": "Scarpin"
+                    },
+                    {
+                        "link": "#camisa",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_29_08._Camisa.jpg",
+                        "alt": "Mulher vestindo camisa listrada azul e branca aberta com mangas longas, modelagem oversized, botões brancos e bolso frontal.",
+                        "title": "Camisa"
+                    },
+                    {
+                        "link": "#polo",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_31_09._Polo.jpg",
+                        "alt": "Camisa polo vermelha Tommy Hilfiger com mangas curtas, gola polo, botões brancos frontais e logo bordado.",
+                        "title": "Polo"
+                    },
+                    {
+                        "link": "#blazer",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_33_10._Blazer.jpg",
+                        "alt": "Blazer oversized preto, com gola alfaiataria, ombreiras, bolso frontal na altura do tórax e bolsos frontais e nos punhos.",
+                        "title": "Blazer"
+                    },
+                    {
+                        "link": "#colete",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_35_11._Colete.jpg",
+                        "alt": "Colete alfaiataria branco com decote v, botões frontais, pregas, um bolso de cada lado e barras com pontas.",
+                        "title": "Colete"
+                    },
+                    {
+                        "link": "#bermuda",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_37_12._Bermuda.jpg",
+                        "alt": "Bermuda alfaiataria alongada preta com pregas frontais, bolsos faca e detalhe branco na parte superior do cós.",
+                        "title": "Bermuda"
+                    },
+                ]
+            )
+
+            +differences(
+                {
+                    "type": 'titlepag',
+                    "title": 'Diferenciais Dafiti'
+                },
+                [
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_10_00_Selo_Originais.svg",
+                        "alt": "text alt",
+                        "title": "<b>produtos</b> <br>Originais"
+                    },
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_09_57_Selo_Entrega_Rápida.svg",
+                        "alt": "text alt",
+                        "title": "Entrega <br><b>Rápida</b>"
+                    },
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_09_54_Selo_Descontos_Exclusivos.svg",
+                        "alt": "text alt",
+                        "title": "<b>Descontos</b> <br>Exclusivos"
+                    },
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_09_59_Selo_Frete_Grátis.svg",
+                        "alt": "text alt",
+                        "title": "Frete <br><b>Grátis</b>"
+                    },
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_09_56_Selo_Devolução_Fácil.svg",
+                        "alt": "text alt",
+                        "title": "<b>Devolução</b> <br>Fácil"
+                    },
+                    {
+                        "link": "#",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_11_11_31_Selo_Compra_Segura.svg",
+                        "alt": "text alt",
+                        "title": "Compra <b>Segura</b><br> e <b>Confiável</b>"
+                    }
+                ]
+            )
+
+            .contentReturn
+                .flexRight.btnFixed
+                    a.btnReturn(href="#categories") 
+                        img(src="https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_06_15_57_34_Vector.png", alt="")
+
+                +pageTemplate(
+                    'camiseta',
+                    '',
+                    {
+                        "type": 'titlepag',
+                        "title": 'Camisetas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_07_01._Camiseta.jpg',
+                        altPage: 'Homem vestindo camiseta listrada da marca adidas, com manga curta e gola redonda, além de listras nas cores rosa e azul.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=camiseta&wtqs=1'
+                    },
+                    [
+                        'As camisetas são essenciais para um visual casual que reflete as tendências modernas da moda esportiva. Em alta no streetwear, elas se destacam pela praticidade e pelos elementos estéticos que dialogam com a cultura pop e o lifestyle urbano.',
+                        'Combinando conforto e uma estética moderna, essas peças se adaptam perfeitamente à rotina, proporcionando um toque despojado ao seu guarda-roupa. Usadas sozinhas ou em sobreposição, são ideais para expressar uma identidade conectada às últimas tendências da moda, mantendo o conforto.'
+                    ],
+                    [
+                        {
+                            "type": 'text',
+                            "title": 'Camiseta Manga Curta',
+                            "textLeft": 'Perfeitas para qualquer ocasião, as camisetas de manga curta trazem o melhor do estilo casual aliado a uma estética moderna. ',
+                            "textRight": 'Em tecidos leves e com cortes que valorizam o caimento, essas peças são ideais para compor looks descontraídos, sem abrir mão de tendências atuais.'
+                        },
+                        {
+                            "type": 'text',
+                            "title": 'Camiseta Manga Longa',
+                            "textLeft": 'A camiseta de manga longa ganha nova vida nas coleções de marcas esportivas, com designs inspirados na moda urbana e no streetwear.',
+                            "textRight": 'Perfeitas para os dias mais frescos, elas proporcionam estilo e conforto, sendo ideais para sobreposições ou para compor looks mais sofisticados com um toque casual.'
+                        },
+                        {
+                            "type": 'text',
+                            "title": 'Camiseta Estampada',
+                            "textLeft": 'As camisetas estampadas e listradas estão em alta na moda casual esportiva. Com logos estilizados e cores vibrantes, essas peças adicionam um toque retrô ao estilo urbano.',
+                            "textRight": 'As camisetas listradas também seguem a estética esportiva retro, perfeitas para um guarda-roupa casual e moderno.'
+                        },
+                        {
+                            "type": 'text',
+                            "title": 'Camiseta Lisa',
+                            "textLeft": 'Simples e versáteis, as camisetas lisas são ideais para quem prefere um visual mais clean, mas ainda conectado às tendências do mundo fashion. ',
+                            "textRight": 'Seja em tons neutros ou em cores mais ousadas, essas peças oferecem inúmeras possibilidades de combinação, adaptando-se perfeitamente ao seu estilo.'
+                        }
+                    ]
+                )
+
+                +pageTemplate(
+                    'jaqueta',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Jaquetas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_09_02._Jaqueta.jpg',
+                        altPage: 'Jaqueta bomber adidas originals vermelha com logo trefoil, mangas raglan com listras laterais e bolsos frontais.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=jaqueta&wtqs=1'
+                    },
+                    [
+                        "A jaqueta é um item essencial na moda casual esportiva, trazendo funcionalidade e estilo. Peças como jaquetas corta-vento e bomber, inspiradas no Sportcore, são ideais para o dia a dia e atividades ao ar livre.",
+                        "Com acabamento à prova d’água e detalhes de blocos de cores, essas jaquetas oferecem proteção e um visual moderno. O zíper frontal e as mangas raglan dão um toque retrô, enquanto os materiais leves garantem conforto. Seja para looks esportivos ou urbanos, a jaqueta é a peça perfeita para compor um visual casual com atitude."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Jaqueta Bomber',
+                            textLeft: 'A jaqueta bomber, com seu design clássico e esportivo, é perfeita para o estilo casual.',
+                            textRight: 'Ideal para sobreposições, ela combina a estética retrô do Sportcore com uma abordagem moderna, oferecendo um visual descontraído e sofisticado para qualquer ocasião.'
+                        }
+                    ]
+                )
+
+                //- +creator(
+                //-     {
+                //-         "type": 'titlepag',
+                //-         "title": 'dafiti fashion creators'
+                //-     },
+                //-     'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_04_17_00_18_1B3A0889_1_(1).jpg',
+                //-     'alt',
+                //-     '<i>DICAS DE MODA CASUAL ESPORTIVA COM <b>SOFIA MARTINS</b></i>',
+                //-     'Conhecida por seu estilo despojado e sofisticado, Sofia Martins é uma influenciadora de moda e lifestyle',
+                //-     [
+                //-         {
+                //-             "title": 'O que é o estilo casual esportivo para Sofia Martins',
+                //-             "text": '"O principal atrativo é a versatilidade. O estilo casual esportivo combina o melhor dos dois mundos: a funcionalidade das roupas esportivas com a estética moderna e urbana. Vivemos em um momento em que as pessoas valorizam conforto, mas não querem abrir mão de um visual estiloso, e o Sportcore entrega exatamente isso."'
+                //-         },
+                //-         {
+                //-             "title": 'Sofia explica as tendências retro-sport e athleisure',
+                //-             "text": '"Estamos vendo um grande retorno dos anos 90 e 2000 com o revival de marcas e peças icônicas, como os dad sneakers e jaquetas esportivas de zíper. O retro-sport cria um senso de nostalgia, enquanto o athleisure evoluiu para algo mais sofisticado."'
+                //-         },
+                //-         {
+                //-             "title": 'Peças-chave no guarda-roupa de Sofia',
+                //-             "text": '"Tênis confortáveis são a base de tudo, tanto pela estética quanto pela praticidade. Não vivo sem uma boa jaqueta corta-vento ou uma calça com elástico na cintura – esses itens trazem o estilo esportivo, mas podem ser facilmente adaptados para ocasiões casuais."'
+                //-         },
+                //-         {
+                //-             "title": 'Dica de estilo da Sofia',
+                //-             "text": '"Minha dica principal seria experimentar sem medo. Invista em bons tênis e peças básicas como camisetas e jaquetas que possam ser combinadas de várias maneiras. E, acima de tudo, divirta-se!"'
+                //-         }
+                //-     ]
+                //- )
+
+                +pageTemplate(
+                    'calca',
+                    '',
+                    {
+                        "type": 'titlepag',
+                        "title": 'Calça'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_10_03._Calça.jpg',
+                        altPage: 'Mulher vestindo calça firebird adidas preta com recorte lateral branco, fenda, botões, listras bordadas e logo da marca.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=calca&wtqs=1'
+                    },
+                    [
+                        'As calças na moda casual esportiva são definidas pelo conforto e versatilidade. As joggers, com cintura elástica e punhos ajustados, são perfeitas para um estilo descontraído que transita entre atividades diárias e momentos de lazer.',
+                        'Inspiradas no Sportcore, essas calças frequentemente apresentam tecidos leves e respiráveis, ideais para movimento. O estilo mais solto, muitas vezes com detalhes como bolsos laterais ou listras, traz um toque retrô que combina com camisetas e jaquetas. Práticas e estilosas, são a escolha ideal para quem busca mobilidade sem abrir mão do estilo.'
+                    ],
+                    [
+                        {
+                            "type": 'text',
+                            "title": 'Calça Alfaiataria',
+                            "textLeft": 'A calça alfaiataria traz um toque de sofisticação ao guarda-roupa casual esportivo.',
+                            "textRight": 'Com cortes elegantes e tecidos de qualidade, ela é ideal para criar um contraste estiloso com peças mais descontraídas, mantendo um visual refinado e moderno.'
+                        },
+                        {
+                            "type": 'text',
+                            "title": 'Calça Esportiva',
+                            "textLeft": 'A calça esportiva é um item essencial no armário casual esportivo. ',
+                            "textRight": 'Confortável e versátil, ela combina bem com camisetas e jaquetas, oferecendo um look descontraído com um toque de modernidade e estilo, perfeito para o dia a dia.'
+                        }
+                    ]
+                )
+
+                +pageTemplate(
+                    'regata',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Regatas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_12_04._Regata.jpg',
+                        altPage: 'Mulher vestindo regata bicolor, estrutura branca e recortes em preto, com barra mais ajustada e comprimento levemente curto.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=regata&wtqs=1'
+                    },
+                    [
+                        "A regata é uma peça essencial no armário casual e fashion, perfeita para dias quentes e ocasiões descontraídas. No contexto do Sportcore, a regata combina a estética esportiva retrô com um toque moderno e fashion, refletindo o estilo casual do dia a dia.",
+                        "Feita de tecidos leves e respiráveis, como algodão e poliéster, a regata oferece conforto e frescor. Estampas gráficas e logos retrô adicionam um elemento estiloso e contemporâneo. Usada sozinha ou em camadas com jaquetas e coletes, a regata é ideal para criar looks versáteis e elegantes que capturam a essência do estilo Sportcore."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Regata com Decote Nadador',
+                            textLeft: 'A regata com decote nadador é ideal para dias quentes e atividades ao ar livre.',
+                            textRight: 'Com sua estética esportiva retrô, ela proporciona conforto e frescor, além de ser uma escolha estilosa para quem busca um visual casual e moderno.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Regata com Contraste P&B',
+                            textLeft: 'A regata em contraste preto e branco é um clássico do estilo casual esportivo.',
+                            textRight: 'Com um design simples e elegante, ela combina facilmente com outras peças e oferece um visual clean e sofisticado, perfeito para qualquer ocasião descontraída.'
+                        }
+                    ]
+                )
+
+                +brands(
+                    {
+                        "type": 'titlepag',
+                        "title": 'Marcas'
+                    },
+                    [
+                        {
+                            "link": "https://www.dafiti.com.br/santa-lolla/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_47_Santa_Lolla.svg",
+                            "altTitle": "Santa Lolla",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/topshop/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_48_Topshop.svg",
+                            "altTitle": "TOPSHOP",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/mango/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_45_Mango.svg",
+                            "altTitle": "Mango",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/luiza-barcelos/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_43_Luiza_Barcelos.svg",
+                            "altTitle": "Luiza Barcelos",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/lacoste/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_42_Lacoste.svg",
+                            "altTitle": "Lacoste",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/fila/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_41_Fila.svg",
+                            "altTitle": "Fila",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/nike/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_46_Nike.svg",
+                            "altTitle": "Nike",
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/moda/adidas/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_14_04_39_Adidas.svg",
+                            "altTitle": "Adidas",
+                        }
+                    ]
+                )
+
+                +pageTemplate(
+                    'tenis',
+                    '',
+                    {
+                        "type": 'titlepag',
+                        "title": 'Tênis'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_13_05._Tênis.jpg',
+                        altPage: 'Tênis New Balance 530 roxo e azul, com logo lateral prateado e solado em bege e com relevos e texturas.',
+                        linkPage: 'https://www.dafiti.com.br/sneakers-dafiti/'
+                    },
+                    [
+                        'O tênis é o pilar da moda casual esportiva, unindo conforto e estilo em uma só peça. Modelos retrô, como o Adidas Samba e o New Balance 530, ressurgem no Sportcore com solados esculpidos e detalhes em materiais como camurça e mesh. Esses tênis, ideais tanto para a prática esportiva quanto para o uso diário, oferecem suporte e versatilidade.',
+                        'Com uma estética anos 90 e design robusto, os “dad sneakers” também são tendência e complementam qualquer look casual com um toque moderno. Funcionais e cheios de atitude, os tênis são indispensáveis no visual casual esportivo.'
+                    ],
+                    [
+                        {
+                            "type": 'text',
+                            "title": 'Tênis Estilo Chuteira',
+                            "textLeft": 'Os tênis estilo chuteira trazem um toque esportivo ao visual casual. ',
+                            "textRight": 'Inspirados no design de chuteiras, eles oferecem conforto e estilo, sendo ideais para quem deseja adicionar um elemento esportivo moderno ao guarda-roupa.'
+                        },
+                        {
+                            "type": 'text',
+                            "title": 'Dad Shoes',
+                            "textLeft": 'Os dad shoes são uma tendência marcante na moda casual esportiva.',
+                            "textRight": 'Com seu design robusto e confortável, eles oferecem um visual retrô e descolado, perfeito para complementar looks descontraídos e modernos com um toque de estilo vintage.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'sapatilha',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Sapatilhas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_15_06._Sapatilha.jpg',
+                        altPage: 'Sapatilha prateada, com textura e acabamento metalizado, tira superior com fivela ajustável e salto baixo.',
+                        linkPage: 'https://www.dafiti.com.br/calcados-femininos/sapatilhas/'
+                    },
+                    [
+                        "Na moda casual esportiva, as sapatilhas oferecem uma alternativa prática e confortável aos tênis. Versáteis, elas se destacam pelo design minimalista e são perfeitas para quem busca um visual mais arrumado sem abrir mão do conforto.",
+                        "Inspiradas no Sportcore, sapatilhas com toques esportivos, como detalhes em mesh e solados de borracha, adicionam funcionalidade ao dia a dia. Elas são ideais para compor looks casuais e elegantes, mantendo uma estética leve e moderna. Perfeitas para combinar com calças ou shorts, as sapatilhas garantem estilo e praticidade."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Sapatilhas Metalizadas',
+                            textLeft: 'As sapatilhas metalizadas são uma escolha ousada para o estilo casual esportivo.',
+                            textRight: 'Com acabamentos brilhantes e modernos, elas adicionam um toque de glamour a qualquer look, sendo perfeitas para quem busca um visual fashion e sofisticado.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Sapatilhas Vermelhas',
+                            textLeft: 'Sapatilhas vermelhas trazem um toque vibrante ao guarda-roupa casual esportivo.',
+                            textRight: 'Com seu design arrojado e cor marcante, elas são ideais para adicionar um toque de cor e estilo a looks descontraídos e modernos.'
+                        },
+                    ]
+                )
+
+                +recommendations(
+                    {
+                        "type": 'titlepag',
+                        "title": 'Recomendações'
+                    },
+                    [
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=camiseta&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_36_01._Camiseta.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=jaqueta&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_38_02._Jaqueta.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=calca&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_39_03._Calça.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=regata&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_41_04._Regata.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/sneakers-dafiti/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_43_05._Tênis.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/calcados-femininos/sapatilhas/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_45_06._Sapatilha.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/calcados-femininos/scarpins/",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_46_07._Scarpin.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=camisa&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_48_08._Camisa.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=polo&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_50_09._Polo.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=blazer&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_51_10._Blazer.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=colete&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_53_11._Colete.jpg",
+                            "alt": "text alt"
+                        },
+                        {
+                            "link": "https://www.dafiti.com.br/catalog/?q=bermuda&wtqs=1",
+                            "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_20_10_23_55_12._Bermuda.jpg",
+                            "alt": "text alt"
+                        }
+                    ]
+                )
+
+                +pageTemplate(
+                    'scarpin',
+                    '',
+                    {
+                        "type": 'titlepag',
+                        "title": 'Scarpins'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_17_07._Scarpin.jpg',
+                        altPage: 'Scarpin slinkback vermelho com bico fino, laço frontal, ajuste lateral por fivela e salto baixo e fino com base redonda.',
+                        linkPage: 'https://www.dafiti.com.br/calcados-femininos/scarpins/'
+                    },
+                    [
+                        'O scarpin mantém sua elegância clássica dentro do estilo sportstyle. Ele pode ser estilizado para o guarda-roupa casual quando combinado com calças wide leg, como as da linha Firebird da Adidas, oferecendo um contraste interessante entre o sofisticado e o esportivo.',
+                        'Ideal para compor looks que misturam o sofisticado com o casual esportivo, o scarpin pode ser usado para adicionar um toque de refinamento a conjuntos descontraídos. É a escolha perfeita para quem deseja unir estilo clássico e modernidade em um visual do dia a dia.'
+                    ],
+                    [
+                        {
+                            "type": 'text',
+                            "title": 'Scarpin Slingback',
+                            "textLeft": 'O scarpin slingback oferece um toque de elegância ao estilo casual.',
+                            "textRight": 'Com seu design sofisticado e versátil, ele é perfeito para combinar com peças mais descontraídas, proporcionando um visual refinado e moderno para qualquer ocasião.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'camisa',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Camisas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_18_08._Camisa.jpg',
+                        altPage: 'Mulher vestindo camisa listrada azul e branca aberta com mangas longas, modelagem oversized, botões brancos e bolso frontal.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=camisa&wtqs=1'
+                    },
+                    [
+                        "A camisa na moda casual esportiva ganhou uma roupagem descontraída, misturando tecidos leves e uma estética moderna. Inspiradas no Sportcore, camisas com cortes amplos e detalhes como listras ou estampas retrô são tendência.",
+                        "Ideais para usar em camadas, sobre regatas ou camisetas, as camisas adicionam um toque sofisticado ao visual sem perder o conforto. Seja de algodão ou outros tecidos, elas oferecem versatilidade e estilo, podendo ser combinadas com calças ou bermudas, criando looks casuais perfeitos para o dia a dia."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Camisa Lisa',
+                            textLeft: 'Camisas lisas são essenciais no armário casual esportivo, oferecendo um visual clean e versátil.',
+                            textRight: 'Com sua simplicidade elegante, elas são fáceis de combinar e perfeitas para criar looks descontraídos com um toque de sofisticação.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Camisa Manga Curta',
+                            textLeft: 'A camisa de manga curta é uma peça-chave para o estilo casual esportivo, oferecendo conforto e frescor.',
+                            textRight: 'Perfeita para o verão ou para atividades ao ar livre, ela combina facilmente com outras peças para um visual moderno e descontraído.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Camisa Listrada',
+                            textLeft: 'A camisa listrada traz um toque de estilo retrô ao guarda-roupa casual esportivo.',
+                            textRight: 'Com seu padrão clássico e visual moderno, ela é ideal para criar looks elegantes e descontraídos, adicionando um elemento de sofisticação ao visual.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'polo',
+                    '',
+                    {
+                        type: 'titlepag',
+                        title: 'Polos'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_20_09._Polo.jpg',
+                        altPage: 'Camisa polo vermelha Tommy Hilfiger com mangas curtas, gola polo, botões brancos frontais e logo bordado.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=polo&wtqs=1'
+                    },
+                    [
+                        "A camisa polo é um clássico que se reinventa na moda casual esportiva, ganhando novos materiais e cortes modernos. Inspirada no Sportcore, a polo traz uma estética retrô, com detalhes como golas contrastantes e listras nos punhos.",
+                        "Ideal para compor looks despojados e elegantes, ela pode ser combinada com bermudas ou calças, oferecendo um visual casual-chic. Confortável e versátil, a camisa polo é perfeita para o dia a dia, especialmente em ambientes que pedem uma mistura de esporte e sofisticação."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Polo Básica',
+                            textLeft: 'A polo básica é um clássico do guarda-roupa casual esportivo.',
+                            textRight: 'Com seu design simples e elegante, ela é ideal para criar looks versáteis e sofisticados, proporcionando um toque de estilo sem esforço para qualquer ocasião.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Polo Listras Retrô',
+                            textLeft: 'A polo listrada retrô traz um charme vintage ao estilo casual esportivo.',
+                            textRight: 'Com seu padrão de listras clássico e elegante, ela combina perfeitamente com outras peças para criar um visual moderno e sofisticado, com um toque de nostalgia.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'blazer',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Blazers'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_21_10._Blazer.jpg',
+                        altPage: 'Blazer oversized preto, com gola alfaiataria, ombreiras, bolso frontal na altura do tórax e bolsos frontais e nos punhos.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=blazer&wtqs=1'
+                    },
+                    [
+                        "O blazer na moda casual esportiva combina a sofisticação tradicional com toques de funcionalidade e conforto. Inspirado no Sportcore, ele adota cortes mais descontraídos e tecidos leves, como misturas de algodão ou poliéster.",
+                        "Longe do estilo rígido dos blazers tradicionais, essa versão casual esportiva permite liberdade de movimento e pode ser combinada com camisetas e calças para um visual casual-chic. Ideal para quem quer um look moderno e estiloso sem abrir mão do conforto, o blazer é perfeito para o trabalho ou momentos de lazer."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Blazer Cropped',
+                            textLeft: 'O blazer cropped é uma peça moderna e estilosa para o guarda-roupa casual esportivo.',
+                            textRight: 'Com seu design ajustado e contemporâneo, ele adiciona um toque de sofisticação a looks descontraídos, oferecendo um visual fashion e atual.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Blazer Oversized',
+                            textLeft: 'O blazer oversized traz um estilo descontraído e moderno ao casual esportivo.',
+                            textRight: 'Com seu corte amplo e confortável, ele é ideal para sobreposições e combina bem com peças mais informais, criando um visual equilibrado e fashion.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'colete',
+                    '',
+                    {
+                        type: 'titlepag',
+                        title: 'Coletes'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_23_11._Colete.jpg',
+                        altPage: 'Colete alfaiataria branco com decote v, botões frontais, pregas, um bolso de cada lado e barras com pontas.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=colete&wtqs=1'
+                    },
+                    [
+                        "O colete de alfaiataria ganha destaque na casual esportiva como uma peça versátil para criar camadas e adicionar estilo. Inspirado no Sportcore, ele adota uma estética refinada e elegante, ideal para o guarda-roupa moderno e sofisticado.",
+                        "Modelos estruturados e retrô são ideais para compor looks práticos e atuais. Usado sobre camisetas ou camisas, o colete de alfaiataria combina bem com calças ou bermudas, trazendo dinamismo ao visual e reforçando a tendência do estilo casual esportivo com um toque de elegância adicional."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Colete Alfaiataria',
+                            textLeft: 'O colete de alfaiataria é uma peça versátil para o estilo casual esportivo.',
+                            textRight: 'Com seu design elegante e estruturado, ele adiciona um toque de sofisticação a looks descontraídos, sendo perfeito para quem busca um visual moderno e refinado.'
+                        },
+                    ]
+                )
+
+                +pageTemplate(
+                    'bermuda',
+                    'reverse',
+                    {
+                        type: 'titlepag',
+                        title: 'Bermudas'
+                    },
+                    {
+                        type: 'imageText',
+                        linkimage: 'https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_48_24_12._Bermuda.jpg',
+                        altPage: 'Bermuda alfaiataria alongada preta com pregas frontais, bolsos faca e detalhe branco na parte superior do cós.',
+                        linkPage: 'https://www.dafiti.com.br/catalog/?q=bermuda&wtqs=1'
+                    },
+                    [
+                        "A bermuda na moda casual esportiva é uma peça essencial, unindo conforto e estilo. Inspirada no Sportcore, ela pode variar entre modelos de tecidos tecnológicos, e versões mais elegantes, como bermudas de alfaiataria leve. Com cintura elástica ou ajustes laterais, elas são ideais para atividades ao ar livre e momentos de lazer.",
+                        "Versáteis e funcionais, as bermudas podem ser combinadas com regatas ou camisas polo, criando looks modernos e descontraídos, perfeitos para o dia a dia, sempre mantendo a estética casual esportiva em destaque."
+                    ],
+                    [
+                        {
+                            type: 'text',
+                            title: 'Bermuda Alfaiataria',
+                            textLeft: 'A bermuda alfaiataria combina a sofisticação do alfaiataria com o conforto do estilo casual esportivo.',
+                            textRight: 'Ideal para dias quentes, ela proporciona um visual elegante e descontraído, perfeito para criar looks modernos e estilosos.'
+                        },
+                        {
+                            type: 'text',
+                            title: 'Bermuda Sport Casual',
+                            textLeft: 'A bermuda sport casual é ideal para um visual descontraído e moderno.',
+                            textRight: 'Com seu design confortável e versátil, ela combina bem com camisetas e regatas, oferecendo um toque esportivo ao estilo casual, perfeito para o dia a dia.'
+                        },
+                    ]
+                )
+
+            +questions(
+                {
+                    "type": 'titlepag',
+                    "title": 'Perguntas e Respostas Sobre Moda Casual Esportiva'
+                },
+                [
+                    { 
+                        titlebtn: 'O que é estilo casual esportivo?', 
+                        text: '<h4>O estilo casual esportivo combina peças esportivas com o casual do dia a dia.</h4><p>Também conhecido como "Sportcore", essa tendência de moda é marcada pelo conforto e pela versatilidade, onde peças como <a href="https://www.dafiti.com.br/sneakers-dafiti/">tênis retrô</a>, <a href="https://www.dafiti.com.br/catalog/?q=bomber&wtqs=1">jaquetas bomber</a>, <a href="https://www.dafiti.com.br/esporte/?q=calca">calças esportivas</a> e <a href="https://www.dafiti.com.br/catalog/?q=camisas+polo&wtqs=1">camisas polo</a> são combinadas para criar looks despojados, mas cheios de estilo. A estética casual esportiva é influenciada por décadas passadas, especialmente pelos anos 90, e revisita o design clássico de roupas esportivas, misturando funcionalidade com uma pegada moderna e urbana.</p>' 
+                    },
+                    { 
+                        titlebtn: 'O que é moda esportiva?', 
+                        text: '<h4>Moda esportiva é feita para atividades físicas e esportes.</h4><p>Essa moda é focada em desempenho, com tecidos tecnológicos e funcionais, como materiais respiráveis, de secagem rápida e com alta elasticidade, para proporcionar conforto e facilitar o movimento durante a prática esportiva. Ela inclui peças como <a href="https://www.dafiti.com.br/roupas-esportivas/legging/">leggings</a>, <a href="https://www.dafiti.com.br/calcados-esportivos/tenis-esportivo/">tênis de corrida</a>, <a href="https://www.dafiti.com.br/roupas-esportivas/blusa-e-camiseta/">regatas</a>, <a href="https://www.dafiti.com.br/roupas-esportivas/jaqueta-e-corta-vento/">jaquetas impermeáveis</a> e <a href="https://www.dafiti.com.br/esporte/?q=compressao">roupas de compressão</a>. A <a href="https://www.dafiti.com.br/moda-esportiva/">moda esportiva</a> evoluiu para ser não apenas utilitária, mas também esteticamente agradável, permitindo que os consumidores se expressem através de seu estilo, mesmo ao praticar esportes.</p>' 
+                    },
+                    { 
+                        titlebtn: 'Quais são as diferenças entre moda esportiva e moda casual esportiva?', 
+                        text: `
+                            <p>A moda esportiva e a moda casual esportiva são tendências importantes no vestuário moderno, mas diferem significativamente em termos de função e estilo. Enquanto a moda esportiva se concentra em desempenho, a moda casual esportiva foca no estilo e na estética do dia a dia, inspirando-se no esporte, mas com uma abordagem mais relaxada. </p>
+                            <p>Veja a tabela abaixo para uma comparação detalhada entre os dois tipos de moda:</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Aspecto</th>
+                                        <th>Moda Esportiva</th>
+                                        <th>Moda Casual Esportiva</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><h4>Finalidade</h4></td>
+                                        <td>Desenvolvida para o desempenho em atividades físicas.</td>
+                                        <td>Focada no estilo do dia a dia, com inspiração no esporte.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h4>Tecido</h4></td>
+                                        <td>Utiliza tecidos técnicos como materiais respiráveis, de secagem rápida e com alta elasticidade.</td>
+                                        <td>Incorpora elementos esportivos, mas com materiais que priorizam o conforto e a estética.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h4>Corte</h4></td>
+                                        <td>Cortes anatômicos e ajustados para facilitar o movimento e o conforto durante exercícios.</td>
+                                        <td>Cortes mais soltos e despojados, muitas vezes inspirados em estilos retrô e urbanos.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h4>Uso</h4></td>
+                                        <td>Usada principalmente durante a prática de atividades físicas intensas, como corrida, academia ou esportes.</td>
+                                        <td>Usada em ocasiões casuais e momentos de lazer, sem foco em desempenho esportivo intenso.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><h4>Estilo</h4></td>
+                                        <td>Funcional, com foco em melhorar a performance durante a prática esportiva.</td>
+                                        <td>Estética mais fashion, com influências retrô, ideal para um visual casual e estiloso.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Em resumo, a moda esportiva foca em desempenho com tecidos técnicos, enquanto a moda casual esportiva mistura estilo esportivo com um visual urbano despojado. O Sportcore oferece conforto e estilo moderno para o dia a dia.</p>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Como o esporte influencia a moda?', 
+                        text: `
+                            <p>O esporte exerce uma forte influência sobre a moda, impactando tanto o design quanto a funcionalidade das roupas. Abaixo estão algumas das principais maneiras pelas quais o esporte influencia a moda:</p>
+                            <ol>
+                                <li>
+                                    <h4>Design e Funcionalidade</h4>
+                                    <p>Inspiração no design e na funcionalidade das roupas, com foco em desempenho e conforto.</p>
+                                </li>
+                                <li>
+                                    <h4>Tecidos Tecnológicos</h4>
+                                    <p>Incorporação de tecidos tecnológicos, como materiais respiráveis e de secagem rápida, na moda casual.</p>
+                                </li>
+                                <li>
+                                    <h4>Influência dos Esportes Populares</h4>
+                                    <p>Esportes populares, como futebol, tênis, corrida e skate, influenciam as cores, estilos e logotipos nas coleções de moda.</p>
+                                </li>
+                                <li>
+                                    <h4>Estilo de Vida Ativo</h4>
+                                    <p>Adoção de um estilo de vida ativo e saudável impulsiona o uso de roupas esportivas fora do contexto esportivo.</p>
+                                </li>
+                                <li>
+                                    <h4>Tendências Athleisure e Sportcore</h4>
+                                    <p>Tendências como athleisure e Sportcore misturam o conforto do vestuário esportivo com o estilo cotidiano, criando looks casuais e modernos.</p>
+                                </li>
+                            </ol>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Quais as principais marcas de moda casual esportiva na Dafiti?', 
+                        text: `
+                            <p>A Dafiti oferece uma vasta seleção de marcas que se destacam no estilo casual esportivo, unindo herança esportiva e toques modernos com elegância e versatilidade. Abaixo estão as principais marcas que refletem essa tendência:</p>
+                            <ul>
+                                <li><h4><a href="https://www.dafiti.com.br/moda/adidas/">Adidas</a></h4>Conhecida por sua forte herança esportiva, combina tecnologia com estilo urbano moderno.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/nike/">Nike</a></h4>Líder em inovação esportiva, oferece peças que trazem o melhor do estilo casual com um toque atlético.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/fila/">Fila</a></h4>Mistura tendências retrô com uma estética esportiva contemporânea.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/lacoste/">Lacoste</a></h4>Marca clássica que incorpora elegância e esportividade, ideal para looks mais sofisticados.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/mango/">Mango</a></h4>Combina moda casual com um toque esportivo refinado, perfeita para quem busca um visual mais polido.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/santa-lolla/">Santa Lolla</a></h4>Traz acessórios com um toque fashion, ideais para complementar visuais esportivos com estilo.</li>
+                                <li><h4><a href="https://www.dafiti.com.br/luiza-barcelos/">Luiza Barcelos</a></h4>Adiciona elegância aos looks com acessórios que mesclam moda casual e sofisticação.</li>
+                            </ul>
+                            <p>Essas marcas são as melhores escolhas para quem busca unir estilo, conforto e praticidade no guarda-roupa casual esportivo. Com a diversidade oferecida pela Dafiti, fica fácil encontrar peças que equilibram a funcionalidade esportiva e o apelo fashion.</p>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Como criar looks com o estilo casual esportivo?', 
+                        text: `
+                            <p>O estilo casual esportivo oferece inúmeras possibilidades de combinações para diversas ocasiões. Misturando peças esportivas com alfaiataria e acessórios sofisticados, é possível criar looks que equilibram conforto e estilo. Abaixo, veja sugestões de como combinar as principais peças, tanto para looks femininos quanto masculinos, com opções ideais para diferentes ocasiões:</p>
+                            <div class="boxScroll">
+                                <table cellpadding="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Principais Peças</th>
+                                            <th>Look Feminino</th>
+                                            <th>Look Masculino</th>
+                                            <th>Marcas</th>
+                                            <th>Ocasião</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/esporte/?q=calca">Calças Esportivas</a></h4>
+                                            </td>
+                                            <td>Calça esportiva com camiseta básica e jaqueta bomber</td>
+                                            <td>Calça esportiva com camiseta e blazer oversized</td>
+                                            <td><a href="https://www.dafiti.com.br/moda/adidas/">Adidas</a>, <a
+                                                    href="https://www.dafiti.com.br/nike/">Nike</a></td>
+                                            <td>Dia a dia casual, encontro com amigos</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/roupas/?q=camiseta">Camisetas Básicas</a></h4>
+                                            </td>
+                                            <td>Camiseta básica com calça esportiva e tênis</td>
+                                            <td>Camiseta básica com calça esportiva e colete de alfaiataria</td>
+                                            <td><a href="https://www.dafiti.com.br/topshop/">Topshop</a>, <a
+                                                    href="https://www.dafiti.com.br/mango/">Mango</a></td>
+                                            <td>Look casual para passeios, ocasiões informais</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/catalog/?q=bomber&wtqs=1">Jaqueta Bomber</a></h4>
+                                            </td>
+                                            <td>Jaqueta bomber com calça esportiva e sapatilhas metalizadas</td>
+                                            <td>Jaqueta bomber com calça e dad shoes</td>
+                                            <td><a href="https://www.dafiti.com.br/fila/">Fila</a>, <a href="https://www.dafiti.com.br/mango/">Mango</a>
+                                            </td>
+                                            <td>Saídas noturnas, estilo urbano</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/catalog/?q=blazer+oversized&wtqs=1">Blazer Oversized</a></h4>
+                                            </td>
+                                            <td>Blazer oversized com calça e sapatilhas</td>
+                                            <td>Blazer oversized com camiseta e calça esportiva</td>
+                                            <td><a href="https://www.dafiti.com.br/mango/">Mango</a></td>
+                                            <td>Eventos casuais com estilo, trabalho informal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/sneakers-dafiti/">Tênis</a></h4>
+                                            </td>
+                                            <td>Tênis estilo chuteira com calça esportiva e blazer oversized</td>
+                                            <td>Dad shoes com calça esportiva e camiseta básica</td>
+                                            <td><a href="https://www.dafiti.com.br/nike/">Nike</a>, <a
+                                                    href="https://www.dafiti.com.br/moda/adidas/">Adidas</a></td>
+                                            <td>Rotina diária, estilo descontraído</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/catalog/?q=colete+alfaiataria&wtqs=1">Colete de Alfaiataria</a>
+                                                </h4>
+                                            </td>
+                                            <td>Colete de alfaiataria com camiseta básica e calça esportiva</td>
+                                            <td>Colete de alfaiataria com camiseta e calça</td>
+                                            <td><a href="https://www.dafiti.com.br/lacoste/">Lacoste</a></td>
+                                            <td>Eventos casuais com um toque elegante</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><a href="https://www.dafiti.com.br/roupas/?q=bermuda">Bermudas</a></h4>
+                                            </td>
+                                            <td>Bermuda com blazer oversized e camiseta</td>
+                                            <td>Bermuda com camiseta básica e colete</td>
+                                            <td><a href="https://www.dafiti.com.br/mango/">Mango</a>, <a
+                                                    href="https://www.dafiti.com.br/moda/adidas/">Adidas</a></td>
+                                            <td>Passeios informais, clima quente</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Onde encontrar marcas com produtos casuais esportivos?', 
+                        text: `
+                            <h4>Marcas com produtos casuais esportivos podem ser facilmente encontradas na Dafiti.</h4>
+                            <p>A Dafiti é a plataforma ideal para quem busca montar um guarda-roupa casual esportivo com as melhores marcas. Grandes nomes como <a href="https://www.dafiti.com.br/moda/adidas/">Adidas</a>, <a href="https://www.dafiti.com.br/nike/">Nike</a>, <a href="https://www.dafiti.com.br/fila/">Fila</a> e <a href="https://www.dafiti.com.br/lacoste/">Lacoste</a> estão disponíveis com uma ampla variedade de peças que combinam estilo e funcionalidade.</p>
+                            <p>Além disso, a Dafiti oferece uma curadoria diversificada com marcas como <a href="https://www.dafiti.com.br/santa-lolla/">Santa Lolla</a>, <a href="https://www.dafiti.com.br/mango/">Mango</a>, <a href="https://www.dafiti.com.br/topshop/">Topshop</a> e <a href="https://www.dafiti.com.br/luiza-barcelos/">Luiza Barcelos</a>, que trazem acessórios e roupas que equilibram o casual, o fashion e o esportivo. Com entrega rápida, devolução facilitada e uma navegação intuitiva, a Dafiti é o destino completo para encontrar essas marcas e criar looks modernos e versáteis para qualquer ocasião.
+                            </p>
+                        `
+                    }
+                ]
+            )
+
+            +wordCloud(
+                {
+                    "type": 'titlepag',
+                    "title": 'Guia de Moda <b>Casual Esportiva</b>'
+                },
+                [
+                    {
+                        "link": "https://www.dafiti.com.br/adidas-originals/",
+                        "text": "Adidas Originals"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=cal%C3%A7a+afaiataria&wtqs=1",
+                        "text": "Calça Alfaiataria"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/roupas/?q=bermuda",
+                        "text": "Bermuda Sport Casual"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/adidas-originals/",
+                        "text": "Adidas Samba"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=camisa+lisa&wtqs=1",
+                        "text": "Camisas Lisas"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=blazer+cropped&wtqs=1",
+                        "text": "Blazer Cropped"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=cal%C3%A7a+firebird+adidas&wtqs=1",
+                        "text": "Calça Firebird Adidas"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=polo+lisa&wtqs=1",
+                        "text": "Polo Básica"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/?q=camisa&wtqs=1&sleeve=Manga+Curta",
+                        "text": "Camisa Manga Curta"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/nike/",
+                        "text": "Nike"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/santa-lolla/",
+                        "text": "Santa Lolla"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/sneakers-dafiti/fila-disruptor/",
+                        "text": "Fila Disruptor"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/esporte/?q=calca",
+                        "text": "Calça Esportiva"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/_Branco_Preto/?q=regata&wtqs=1",
+                        "text": "Regata P&B"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/?q=camiseta&wtqs=1&sleeve=Manga+Longa",
+                        "text": "Camiseta Manga Longa"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/roupas-femininas/blusas-regata/",
+                        "text": "Regata Nadador"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/sneakers-dafiti/nike/",
+                        "text": "Nike Cortez"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=bermuda+alfaiataria&wtqs=1",
+                        "text": "Bermuda Alfaiataria"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/fila/",
+                        "text": "Fila"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/mango/",
+                        "text": "Mango"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/topshop/",
+                        "text": "Topshop"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=bomber&wtqs=1",
+                        "text": "Jaqueta Bomber"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=camisa+listra&wtqs=1",
+                        "text": "Camisa Listrada"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/calcados-femininos/sapatilhas/_Bronze_Dourado_Ouro%20Velho_Prata_Prata%20Velho_Ros%25C3%25AA/",
+                        "text": "Sapatilhas Metalizadas"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=polo+listra&wtqs=1",
+                        "text": "Polo Listrada"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=blazer+oversized&wtqs=1",
+                        "text": "Blazer Oversized"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=colete+alfaiataria&wtqs=1",
+                        "text": "Colete Alfaiataria"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/sneakers-dafiti/adidas-gazelle/",
+                        "text": "Adidas Gazelle"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/sneakers-dafiti/adidas-spezial/",
+                        "text": "Adidas Spezial"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/?q=camiseta&wtqs=1&sleeve=Manga+Curta",
+                        "text": "Camiseta Manga Curta"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/lacoste/",
+                        "text": "Lacoste"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/catalog/?q=camiseta+estampa&wtqs=1",
+                        "text": "Camiseta Estampada"
+                    },
+                    {
+                        "link": "https://www.dafiti.com.br/luiza-barcelos/",
+                        "text": "Luiza Barcelos"
+                    },
+                ]
+            )
+
+    //- script(src="external/scripts.js")
+    script(src="js/script.js") 
+
+            
+
+

@@ -1,0 +1,51 @@
+mixin pageTemplate(id='', mainFlexImgClass='', titleBlock, imageText, mainText, textBlocks)
+    .pageTemplate(id=id)
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                //- .line
+                h3= titleBlock.title
+
+        if imageText.type === 'imageText'
+            .mainFlexImg(class=mainFlexImgClass)
+                a.boxImage(href=imageText.linkPage, rel="noopener noreferrer") 
+                    .btnComprar
+                        p comprar
+                    img(src=imageText.linkimage, alt=imageText.altPage)
+                .boxText
+                    each paragraph in mainText
+                        p= paragraph
+        
+
+        .mainText
+            each block in textBlocks
+                if block.type === 'text'
+                    .textBox
+                        .mainTitle
+                            h4= block.title
+                        .flexText
+                            .text.left
+                                p= block.textLeft
+                            .line
+                            .text.right
+                                p= block.textRight
+
+                else if block.type === 'quote'
+                    .quoteBox
+                        .marks
+                            img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2024_08_30_15_16_30_aspas.png" alt="aspas")
+                        .textBox
+                            p= block.quoteText
+                            .author
+                                p= block.author
+                        .marks.inverted
+                            img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2024_08_30_15_16_30_aspas.png" alt="aspas")
+
+//- if imageText.type === 'imageText'
+//-     .mainFlexImg(class=mainFlexImgClass)
+//-         .boxImage
+//-             a(href=imageText.linkPage, rel="noopener noreferrer")
+//-                 p comprar
+//-             img(src=imageText.linkimage, alt=imageText.altPage)
+//-         .boxText
+//-             each paragraph in mainText
+//-                 p= paragraph

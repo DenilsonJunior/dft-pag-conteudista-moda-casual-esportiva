@@ -1,0 +1,10 @@
+mixin tendencies(cards)
+    .tendenciesTemplate
+        .boxFlex
+            each card in cards
+                a.card(href=card.link, rel="noopener noreferrer")
+                    .boxImg
+                        img(src=card.img, alt=card.alt)
+                    .boxText
+                        h3!= card.title
+                        p.num!= card.text

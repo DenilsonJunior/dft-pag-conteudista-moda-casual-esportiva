@@ -1,0 +1,14 @@
+mixin categories(id='', titleBlock, cards)
+    .categoriesTemplate(id=id)
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                //- .line
+                h2= titleBlock.title
+        .boxFlex
+            each card in cards
+                a.card(href=card.link, rel="noopener noreferrer")
+                    .boxImg
+                        img(src=card.img, alt=card.alt)
+                    .boxText
+                        if card.title
+                            h3!= card.title

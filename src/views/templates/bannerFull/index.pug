@@ -1,0 +1,14 @@
+mixin bannerFull(imgBlock, titleBlock, textBlock)
+    .bannerFullTemplate
+        .blockBox
+            if imgBlock.type === 'image'
+                img.desk(src=imgBlock.imgDesk, alt=imgBlock.alt)
+                img.mob(src=imgBlock.imgMob, alt=imgBlock.alt)
+                
+            .blockTextCenter
+                if titleBlock.type === 'title'
+                    h1!= titleBlock.title
+
+        if textBlock && textBlock.type === 'text'
+            .blockText
+                p!= textBlock.text

@@ -1,0 +1,19 @@
+mixin nike(cards)
+    //- link style
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css")
+
+    .nikeTemplate
+        .boxFlex
+            .wrapper-carousel(
+                
+            )
+                .keen-slider#nike
+                    each card in cards
+                        .keen-slider__slide.number-slide
+                            a.card(href=card.link, rel="noopener noreferrer")
+                                .boxImg
+                                    h2=card.text
+                                    img(src=card.img, alt=card.alt)
+
+    //- script
+    script(src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js")

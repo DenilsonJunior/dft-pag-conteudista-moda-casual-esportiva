@@ -1,0 +1,14 @@
+mixin differences(titleBlock, cards)
+    .differencesTemplate
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                //- .line
+                h2= titleBlock.title
+        .boxFlex
+            each card in cards
+                //- a.card(href=card.link, rel="noopener noreferrer")
+                .card(rel="noopener noreferrer")
+                    img(src=card.img, alt=card.alt)
+                    .boxText
+                        if card.title
+                            h3!= card.title

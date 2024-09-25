@@ -1,0 +1,9 @@
+mixin wordCloud(titleBlock, cards)
+    .wordCloudTemplate
+        if titleBlock.type === 'titlepag'
+            .title
+                h2!= titleBlock.title
+        .boxFlex
+            each card in cards
+                a.card(href=card.link, rel="noopener noreferrer")
+                    h3=card.text

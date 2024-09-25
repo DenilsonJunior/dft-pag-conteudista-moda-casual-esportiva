@@ -1,0 +1,112 @@
+.brandsTemplate {
+    width: 100%;
+    @media (max-width: 768px) {
+        padding: 0 0rem 5vw;
+    }
+
+    .boxFlex {
+        background-color: #E9E9E9;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 4vw;
+        flex-wrap: wrap;
+        padding: 4vw 13% 5vw;
+        margin-bottom: 5vw;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        @media (max-width: 768px) {
+            flex-wrap: nowrap;
+            gap: 1rem;
+            justify-content: start;
+            overflow-x: auto;
+            padding: 2rem;
+        }
+
+        .box {
+            width: calc((100% / 4) - 3vw);
+            @media (max-width: 768px) {
+                width: auto;
+                overflow: initial;
+            }
+            &:hover {
+                .card {
+
+                    img {
+                        transform: scale(1.07);
+                        opacity: 1;
+                        // margin-top: inherit;
+                    }
+                }
+                h3 {
+                    // opacity: 0;
+                    // margin-top: 50vw;
+                    // filter: blur(100px);
+                    color: #000;
+                }
+            }
+            .card {
+                position: relative;
+                width: 100%;
+                text-decoration: none;
+                box-sizing: border-box;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // padding: 2vw;
+                aspect-ratio: 1.1;
+                border-radius: 3.5vw;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                    width: auto;
+                    overflow: initial;
+                }
+    
+                @media (max-width: 768px) {
+                    width: auto;
+                }
+    
+                img {
+                    transition-duration: .3s;
+                    position: absolute;
+                    display: block;
+                    width: 110%;
+                    // height: 60%;
+                    object-fit: contain;
+                    // opacity: 0;
+                    // margin-top: -50vw;
+                    @media (max-width: 768px) {
+                        width: 23vw;
+                        position: relative;
+                    }
+                }
+            }
+            h3 {
+                transition-duration: .6s;
+                text-align: center;
+                text-transform: uppercase;
+                // font-style: italic;
+                // letter-spacing: .3vw;
+                line-height: .9;
+                color: #d1cece;
+                // position: absolute;
+                width: 100%;
+                font-size: 1.4vw;
+                filter: blur(0px);
+                margin-top: .8vw;
+                margin-bottom: -1.3vw;
+                font-weight: 500;
+                @media (max-width: 768px) {
+                    font-size: 2.6vw;
+                    margin-top: 1.5vw;
+                }
+            }
+        }
+
+    }
+}

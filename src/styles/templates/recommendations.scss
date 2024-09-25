@@ -1,0 +1,39 @@
+.recommendationsTemplate {
+    width: 100%;
+    padding-bottom: 5vw;
+    
+    .boxFlex {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+        padding: 0 0 1rem;
+        .wrapper-carousel {
+            width: 100%;
+            .keen-slider {
+                .keen-slider__slide {
+                    .card {
+                        .boxImg {
+                            overflow: hidden;
+                            img {
+                                transition-duration: .3s;
+                                width: 100%;
+                                display: block;
+                                @media (max-width: 768px) {
+                                    width: 40vw;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .boxImg {
+                                img {
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

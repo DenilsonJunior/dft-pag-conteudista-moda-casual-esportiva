@@ -1,0 +1,16 @@
+mixin creator(titleBlock, img, alt, textUp, textDown, items)
+    .creatorTemplate
+        if titleBlock.type === 'titlepag'
+            .mainTitle
+                .line
+                h2= titleBlock.title
+        .boxCreator
+            img(src=img, alt=alt)
+            .boxText
+                h2.textUp!= textUp
+                p.textDown!= textDown
+        .content
+            each item in items
+                .item
+                    h3!= item.title
+                    p!= item.text
