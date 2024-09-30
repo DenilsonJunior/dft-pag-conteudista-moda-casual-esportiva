@@ -1,14 +1,19 @@
-mixin creator(titleBlock, img, alt, textUp, textDown, items)
+mixin creator(titleBlock, images, textUp, textDown, items)
     .creatorTemplate
         if titleBlock.type === 'titlepag'
             .mainTitle
                 .line
                 h2= titleBlock.title
         .boxCreator
-            img(src=img, alt=alt)
+            .keen-slider#creator(data-content-items)
+                each image in images
+                    .keen-slider__slide.number-slide
+                        img.card(src=image.img, alt=image.alt)
+
             .boxText
                 h2.textUp!= textUp
-                p.textDown!= textDown
+        
+        p.textDown!= textDown
         .content
             each item in items
                 .item
